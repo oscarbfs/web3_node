@@ -1,0 +1,23 @@
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "oscar.borgesfs@gmail.com",
+    "password": "oscar12345"
+}
+
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "elton@gmail.com",
+    "password": "elton12345"
+}
+
+GET http://localhost:3000/auth/checkToken
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+DELETE http://localhost:3000/auth/logout
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99

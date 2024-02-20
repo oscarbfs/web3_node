@@ -1,0 +1,9 @@
+{
+  "name": "google_classroom_backend",
+  "version": "1.0.0",
+  "description": "Backend da aplicação Google Classroom",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Oscar Borges",
+  "license": "MIT"
+}

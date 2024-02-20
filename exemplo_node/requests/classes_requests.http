@@ -1,0 +1,74 @@
+GET http://localhost:3000/classes/searchClasses
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+GET http://localhost:3000/classes/searchClasses?name=Turma 1 ADS
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+GET http://localhost:3000/classes/searchClasses?discipline=IHC
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+GET http://localhost:3000/classes/searchClasses?name=Turma 1 ADS&discipline=algoritmo
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+GET http://localhost:3000/classes/getClass?id=1
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+POST http://localhost:3000/classes/createClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "name": "Turma 1 ADS",
+    "section": "1",
+    "discipline": "algoritmo",
+    "room": "1"
+}
+
+POST http://localhost:3000/classes/createClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "name": "Turma 1 ADS",
+    "section": "1",
+    "discipline": "IHC",
+    "room": "1"
+}
+
+POST http://localhost:3000/classes/joinClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "id": "1"
+}
+
+DELETE http://localhost:3000/classes/leaveClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "id": "1"
+}
+
+PUT http://localhost:3000/classes/updateClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "id": "1",
+    "name": "Turma 2 ADS"
+}
+
+DELETE http://localhost:3000/classes/deleteClass
+content-type: application/json
+Authorization: token g86z89hkcfvxnzxy7f81o
+
+{
+    "id": "1"
+}

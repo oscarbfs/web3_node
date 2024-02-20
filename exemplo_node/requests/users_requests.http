@@ -1,0 +1,53 @@
+GET http://localhost:3000/users/searchUsers
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+GET http://localhost:3000/users/searchUsers?name=Oscar Borges
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+GET http://localhost:3000/users/searchUsers?email=oscar.borgesfs@gmail.com
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+GET http://localhost:3000/users/searchUsers?name=Oscar Borges&email=oscar.borgesfs@gmail.com
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+GET http://localhost:3000/users/getUser?id=1
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+GET http://localhost:3000/users/getClassUsers?class_id=1
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+POST http://localhost:3000/users/createUser
+content-type: application/json
+
+{
+    "name": "Oscar Borges",
+    "email": "oscar.borgesfs@gmail.com",
+    "password": "oscar12345"
+}
+
+POST http://localhost:3000/users/createUser
+content-type: application/json
+
+{
+    "name": "Elton Faleta",
+    "email": "elton@gmail.com",
+    "password": "elton12345"
+}
+
+PUT http://localhost:3000/users/updateUser
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
+
+{
+    "name": "Oscar BFS"
+}
+
+DELETE http://localhost:3000/users/deleteUser
+content-type: application/json
+Authorization: token emh7s79mvcema880k82c99
